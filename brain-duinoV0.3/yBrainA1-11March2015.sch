@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13203,7 +13203,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf<
 </class>
 </classes>
 <parts>
-<part name="ICSP" library="jumper" deviceset="JP3Q" device=""/>
+<part name="ICSP" library="jumper" deviceset="JP3Q" device="" value="."/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
@@ -13265,16 +13265,16 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf<
 <part name="R19" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0805" value="47pF"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="VCC" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="GND" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="TXD" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="RXD" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="VCC" library="pinhead" deviceset="PINHD-1X1" device="" value="."/>
+<part name="GND" library="pinhead" deviceset="PINHD-1X1" device="" value="."/>
+<part name="TXD" library="pinhead" deviceset="PINHD-1X1" device="" value="."/>
+<part name="RXD" library="pinhead" deviceset="PINHD-1X1" device="" value="."/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="IC3" library="linear" deviceset="TL064" device="D" value="OP4177ARZ"/>
-<part name="IOH" library="pinhead" deviceset="PINHD-1X10" device=""/>
-<part name="POWER" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="AD" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="IOL" library="pinhead" deviceset="PINHD-1X8" device=""/>
+<part name="IOH" library="pinhead" deviceset="PINHD-1X10" device="" value="."/>
+<part name="POWER" library="pinhead" deviceset="PINHD-1X8" device="" value="."/>
+<part name="AD" library="pinhead" deviceset="PINHD-1X6" device="" value="."/>
+<part name="IOL" library="pinhead" deviceset="PINHD-1X8" device="" value="."/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0805" value="470"/>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -13340,9 +13340,9 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf<
 <part name="C38" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0805" value="10µF"/>
 <part name="S2" library="switch-misc" deviceset="9450-2" device=""/>
-<part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
-<part name="SJ2" library="jumper" deviceset="SJ2W" device=""/>
-<part name="SJ3" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ1" library="jumper" deviceset="SJ2W" device="" value="."/>
+<part name="SJ2" library="jumper" deviceset="SJ2W" device="" value="."/>
+<part name="SJ3" library="jumper" deviceset="SJ2W" device="" value="."/>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
@@ -13353,8 +13353,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf<
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R0805" value="2.15K"/>
 <part name="K1" library="relay" deviceset="AQY221*2V" device="" technology="R" value="AQY221R2VY"/>
-<part name="SJ4" library="jumper" deviceset="SJ2W" device=""/>
-<part name="SJ5" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ4" library="jumper" deviceset="SJ2W" device="" value="."/>
+<part name="SJ5" library="jumper" deviceset="SJ2W" device="" value="."/>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0805" value="15nF"/>
 <part name="C45" library="rcl" deviceset="C-EU" device="C0805" value="2.7nF"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
@@ -13365,30 +13365,30 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf<
 <part name="C46" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="C47" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="D2" library="diode" deviceset="PD3S160" device="" value="RB160M-30"/>
-<part name="SJ7" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ7" library="jumper" deviceset="SJ2W" device="" value="."/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="SJ8" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ8" library="jumper" deviceset="SJ2W" device="" value="."/>
 <part name="C48" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="C49" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="SJ9" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ9" library="jumper" deviceset="SJ2W" device="" value="."/>
 <part name="C50" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="C51" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="SJ10" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ11" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ10" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ11" library="jumper" deviceset="SJ" device="" value="."/>
 <part name="U$1" library="MKH" deviceset="AD8220" device="" value="AD8422ARMZ"/>
 <part name="U$2" library="MKH" deviceset="AD8220" device="" value="AD8422ARMZ"/>
 <part name="IC1" library="analog-devices" deviceset="AD8656" device="RM" value="OP2177ARMZ"/>
-<part name="SJ12" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ13" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ14" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ15" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ16" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ6" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ17" library="jumper" deviceset="SJ" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-2X5" device="/90"/>
+<part name="SJ12" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ13" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ14" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ15" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ16" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ6" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="SJ17" library="jumper" deviceset="SJ" device="" value="."/>
+<part name="JP5" library="pinhead" deviceset="PINHD-2X5" device="/90" value="."/>
 </parts>
 <sheets>
 <sheet>
@@ -14138,7 +14138,8 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <wire x1="68.58" y1="104.14" x2="10.16" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="53.34" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="45.72" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <junction x="10.16" y="45.72"/>
@@ -14146,10 +14147,12 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <junction x="68.58" y="45.72"/>
 <wire x1="15.24" y1="60.96" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 <junction x="15.24" y="45.72"/>
-<pinref part="JP5" gate="A" pin="6"/>
 <pinref part="JP5" gate="A" pin="5"/>
-<wire x1="50.8" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="6"/>
+<wire x1="50.8" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="60.96" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<junction x="55.88" y="45.72"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -15539,34 +15542,6 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <approved hash="104,1,139.7,93.98,U$1,-V,V-,,,"/>
 <approved hash="104,1,139.7,53.34,U$2,+V,V+,,,"/>
 <approved hash="104,1,139.7,33.02,U$2,-V,V-,,,"/>
-<approved hash="108,1,43.18,60.96,GND,,,,,"/>
-<approved hash="113,1,383.54,54.7412,ICSP,,,,,"/>
-<approved hash="113,1,310.117,205.74,VCC,,,,,"/>
-<approved hash="113,1,310.117,200.66,GND,,,,,"/>
-<approved hash="113,1,310.117,195.58,TXD,,,,,"/>
-<approved hash="113,1,310.117,190.5,RXD,,,,,"/>
-<approved hash="113,1,363.457,195.711,IOH,,,,,"/>
-<approved hash="113,1,384.537,129.671,POWER,,,,,"/>
-<approved hash="113,1,353.297,61.0912,AD,,,,,"/>
-<approved hash="113,1,335.517,195.711,IOL,,,,,"/>
-<approved hash="113,1,360.68,127.941,SJ1,,,,,"/>
-<approved hash="113,1,331.799,60.96,SJ2,,,,,"/>
-<approved hash="113,1,331.799,48.26,SJ3,,,,,"/>
-<approved hash="113,1,259.08,119.676,SJ4,,,,,"/>
-<approved hash="113,1,274.32,120.057,SJ5,,,,,"/>
-<approved hash="113,1,192.099,22.86,SJ7,,,,,"/>
-<approved hash="113,1,192.099,83.82,SJ8,,,,,"/>
-<approved hash="113,1,256.54,134.916,SJ9,,,,,"/>
-<approved hash="113,1,183.904,195.58,SJ10,,,,,"/>
-<approved hash="113,1,168.664,195.58,SJ11,,,,,"/>
-<approved hash="113,1,106.68,128.024,SJ12,,,,,"/>
-<approved hash="113,1,106.68,82.3045,SJ13,,,,,"/>
-<approved hash="113,1,106.68,67.0645,SJ14,,,,,"/>
-<approved hash="113,1,106.68,21.3445,SJ15,,,,,"/>
-<approved hash="113,1,127,201.684,SJ16,,,,,"/>
-<approved hash="113,1,48.26,75.1755,SJ6,,,,,"/>
-<approved hash="113,1,48.0282,48.5055,SJ17,,,,,"/>
-<approved hash="113,1,45.6777,62.3612,JP5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
