@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6711,7 +6711,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="470"/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
-<part name="U$4" library="MKH" deviceset="MAX7480" device="" value="MAX7480ESA+"/>
+<part name="IC11" library="MKH" deviceset="MAX7480" device="" value="MAX7480ESA+"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="4.7K"/>
 <part name="D3" library="diode" deviceset="BAT60J" device="" value="UDZV5.1B"/>
@@ -6721,7 +6721,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="10µF"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="10µF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="U$7" library="MKH" deviceset="RB-0515D" device="" value="DC-DC +-12V, RB-0512D"/>
+<part name="IC12" library="MKH" deviceset="RB-0515D" device="" value="DC-DC +-12V, RB-0512D"/>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="10µF"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="P+17" library="supply1" deviceset="V+" device=""/>
@@ -6737,12 +6737,12 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="10µF"/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="2.15K"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="2.15K"/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X12" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X12" device=""/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X12" device="" value="."/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X12" device="" value="."/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="470"/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
-<part name="U$2" library="MKH" deviceset="MAX7480" device="" value="MAX7480ESA+"/>
+<part name="IC10" library="MKH" deviceset="MAX7480" device="" value="MAX7480ESA+"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="4.7K"/>
 <part name="D1" library="diode" deviceset="BAT60J" device="" value="UDZV5.1B"/>
@@ -6785,7 +6785,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <attribute name="NAME" x="290.576" y="124.079" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="293.116" y="121.539" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$4" gate="G$1" x="271.78" y="129.54" smashed="yes">
+<instance part="IC11" gate="G$1" x="271.78" y="129.54" smashed="yes">
 <attribute name="NAME" x="264.16" y="118.11" size="1.778" layer="95"/>
 <attribute name="VALUE" x="261.62" y="139.7" size="1.778" layer="96"/>
 </instance>
@@ -6801,7 +6801,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <instance part="C9" gate="G$1" x="63.5" y="127" rot="MR180"/>
 <instance part="C10" gate="G$1" x="63.5" y="139.7" rot="MR180"/>
 <instance part="GND7" gate="1" x="86.36" y="119.38" rot="MR0"/>
-<instance part="U$7" gate="G$1" x="38.1" y="132.08" smashed="yes">
+<instance part="IC12" gate="G$1" x="38.1" y="132.08" smashed="yes">
 <attribute name="NAME" x="27.94" y="140.335" size="1.778" layer="95"/>
 <attribute name="VALUE" x="10.16" y="149.86" size="1.778" layer="96"/>
 </instance>
@@ -6851,7 +6851,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <attribute name="NAME" x="288.036" y="83.439" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="290.576" y="80.899" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$2" gate="G$1" x="269.24" y="88.9" smashed="yes">
+<instance part="IC10" gate="G$1" x="269.24" y="88.9" smashed="yes">
 <attribute name="NAME" x="261.62" y="77.47" size="1.778" layer="95"/>
 <attribute name="VALUE" x="256.54" y="99.06" size="1.778" layer="96"/>
 </instance>
@@ -6911,7 +6911,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <net name="GND" class="0">
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="IC11" gate="G$1" pin="GND"/>
 <wire x1="281.94" y1="116.84" x2="294.64" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="116.84" x2="294.64" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="124.46" x2="281.94" y2="116.84" width="0.1524" layer="91"/>
@@ -6956,7 +6956,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <wire x1="104.14" y1="132.08" x2="104.14" y2="127" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
 <junction x="86.36" y="127"/>
-<pinref part="U$7" gate="G$1" pin="COM"/>
+<pinref part="IC12" gate="G$1" pin="COM"/>
 <wire x1="78.74" y1="134.62" x2="73.66" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -6980,7 +6980,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <junction x="73.66" y="99.06"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="-VIN"/>
+<pinref part="IC12" gate="G$1" pin="-VIN"/>
 <wire x1="25.4" y1="132.08" x2="22.86" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="132.08" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -6992,7 +6992,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="IC10" gate="G$1" pin="GND"/>
 <wire x1="279.4" y1="76.2" x2="292.1" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="76.2" x2="292.1" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="83.82" x2="279.4" y2="76.2" width="0.1524" layer="91"/>
@@ -7049,7 +7049,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <pinref part="P+17" gate="1" pin="V+"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="149.86" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="+VOUT"/>
+<pinref part="IC12" gate="G$1" pin="+VOUT"/>
 <wire x1="63.5" y1="147.32" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="137.16" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
@@ -7068,7 +7068,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <segment>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="-VOUT"/>
+<pinref part="IC12" gate="G$1" pin="-VOUT"/>
 <wire x1="58.42" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="132.08" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
@@ -7105,21 +7105,21 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <segment>
 <wire x1="259.08" y1="124.46" x2="259.08" y2="127" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="OS"/>
+<pinref part="IC11" gate="G$1" pin="OS"/>
 <junction x="259.08" y="124.46"/>
-<pinref part="U$4" gate="G$1" pin="COM"/>
+<pinref part="IC11" gate="G$1" pin="COM"/>
 <junction x="259.08" y="127"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="OUT"/>
+<pinref part="IC11" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="IN"/>
+<pinref part="IC11" gate="G$1" pin="IN"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="238.76" y1="134.62" x2="259.08" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="127" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
@@ -7130,17 +7130,17 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="+5V"/>
+<pinref part="IC11" gate="G$1" pin="+5V"/>
 <wire x1="281.94" y1="132.08" x2="281.94" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="/SHDN"/>
+<pinref part="IC11" gate="G$1" pin="/SHDN"/>
 <wire x1="281.94" y1="134.62" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
 <junction x="281.94" y="134.62"/>
 <pinref part="P+14" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="+5V"/>
+<pinref part="IC10" gate="G$1" pin="+5V"/>
 <wire x1="279.4" y1="91.44" x2="279.4" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="/SHDN"/>
+<pinref part="IC10" gate="G$1" pin="/SHDN"/>
 <wire x1="279.4" y1="93.98" x2="279.4" y2="104.14" width="0.1524" layer="91"/>
 <junction x="279.4" y="93.98"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -7148,7 +7148,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="137.16" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="+VIN"/>
+<pinref part="IC12" gate="G$1" pin="+VIN"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="12.7" y1="134.62" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="142.24" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
@@ -7162,7 +7162,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 </net>
 <net name="N$91" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="CLK"/>
+<pinref part="IC11" gate="G$1" pin="CLK"/>
 <wire x1="251.46" y1="137.16" x2="251.46" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C23" gate="G$1" pin="2"/>
@@ -7269,21 +7269,21 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <segment>
 <wire x1="256.54" y1="83.82" x2="256.54" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="OS"/>
+<pinref part="IC10" gate="G$1" pin="OS"/>
 <junction x="256.54" y="83.82"/>
-<pinref part="U$2" gate="G$1" pin="COM"/>
+<pinref part="IC10" gate="G$1" pin="COM"/>
 <junction x="256.54" y="86.36"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="OUT"/>
+<pinref part="IC10" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="IN"/>
+<pinref part="IC10" gate="G$1" pin="IN"/>
 <wire x1="233.68" y1="93.98" x2="236.22" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="236.22" y1="93.98" x2="256.54" y2="93.98" width="0.1524" layer="91"/>
@@ -7294,7 +7294,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="CLK"/>
+<pinref part="IC10" gate="G$1" pin="CLK"/>
 <wire x1="246.38" y1="88.9" x2="248.92" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="88.9" x2="256.54" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
@@ -7373,13 +7373,11 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <pinref part="S2" gate="2" pin="S"/>
 <wire x1="246.38" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="167.64" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="170.18" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="10"/>
 <wire x1="246.38" y1="167.64" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="104.14" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="104.14" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="160.02" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
+<junction x="246.38" y="160.02"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -7389,6 +7387,7 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 <wire x1="251.46" y1="160.02" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="S"/>
 <wire x1="251.46" y1="170.18" x2="251.46" y2="160.02" width="0.1524" layer="91"/>
+<junction x="251.46" y="160.02"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -7411,17 +7410,11 @@ Marquardt, RAFI, ITT, and others&lt;p&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,281.94,134.62,U$4,+5V,VCC,,,"/>
-<approved hash="104,1,279.4,93.98,U$2,+5V,VCC,,,"/>
+<approved hash="104,1,281.94,134.62,IC11,+5V,VCC,,,"/>
+<approved hash="104,1,279.4,93.98,IC10,+5V,VCC,,,"/>
 <approved hash="208,1,121.92,152.4,VEE,sup,,,,"/>
 <approved hash="208,1,111.76,147.32,VEE,out,,,,"/>
 <approved hash="208,1,231.14,177.8,VEE,sup,,,,"/>
-<approved hash="108,1,246.38,104.14,N$33,,,,,"/>
-<approved hash="108,1,241.3,170.18,N$33,,,,,"/>
-<approved hash="108,1,246.38,160.02,N$33,,,,,"/>
-<approved hash="108,1,251.46,160.02,N$31,,,,,"/>
-<approved hash="113,1,236.089,160.257,JP5,,,,,"/>
-<approved hash="113,1,66.2771,86.4912,JP6,,,,,"/>
 </errors>
 </schematic>
 </drawing>

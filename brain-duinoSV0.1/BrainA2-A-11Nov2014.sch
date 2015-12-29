@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6643,7 +6643,7 @@ Source: OP1177_2177_4177.pdf</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="V+" device=""/>
 <part name="P-4" library="supply1" deviceset="V-" device=""/>
-<part name="U$1" library="MKH" deviceset="AD8220" device="" value="AD8422ARMZ"/>
+<part name="IC8" library="MKH" deviceset="AD8220" device="" value="AD8422ARMZ"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="0.1µF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
@@ -6656,14 +6656,14 @@ Source: OP1177_2177_4177.pdf</description>
 <part name="IC4" library="linear" deviceset="OP1277" device="RM" value="OP2177ARMZ"/>
 <part name="P-6" library="supply1" deviceset="V-" device=""/>
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X12" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X12" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X12" device="" value="."/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X12" device="" value="."/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
-<part name="SJ2" library="jumper" deviceset="SJ2W" device=""/>
-<part name="SJ3" library="jumper" deviceset="SJ2W" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="" value="."/>
+<part name="SJ1" library="jumper" deviceset="SJ2W" device="" value="."/>
+<part name="SJ2" library="jumper" deviceset="SJ2W" device="" value="."/>
+<part name="SJ3" library="jumper" deviceset="SJ2W" device="" value="."/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X3" device="" value="."/>
 </parts>
 <sheets>
 <sheet>
@@ -6723,7 +6723,7 @@ Source: OP1177_2177_4177.pdf</description>
 <instance part="GND8" gate="1" x="172.72" y="76.2"/>
 <instance part="P+4" gate="1" x="180.34" y="129.54"/>
 <instance part="P-4" gate="1" x="180.34" y="78.74"/>
-<instance part="U$1" gate="G$1" x="180.34" y="104.14" smashed="yes">
+<instance part="IC8" gate="G$1" x="180.34" y="104.14" smashed="yes">
 <attribute name="NAME" x="175.26" y="102.87" size="1.778" layer="95"/>
 <attribute name="VALUE" x="187.96" y="106.68" size="1.778" layer="96"/>
 </instance>
@@ -6790,6 +6790,7 @@ Source: OP1177_2177_4177.pdf</description>
 <wire x1="45.72" y1="106.68" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="2"/>
+<junction x="53.34" y="106.68"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -6846,18 +6847,19 @@ Source: OP1177_2177_4177.pdf</description>
 <wire x1="157.48" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="68.58" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
 <junction x="157.48" y="68.58"/>
-<pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="53.34" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="109.22" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="1"/>
+<wire x1="48.26" y1="109.22" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
+<wire x1="48.26" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<junction x="53.34" y="109.22"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="124.46" x2="180.34" y2="127" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="124.46" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="V+"/>
-<pinref part="U$1" gate="G$1" pin="+V"/>
+<pinref part="IC8" gate="G$1" pin="+V"/>
 <wire x1="180.34" y1="124.46" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
 <junction x="180.34" y="124.46"/>
 <pinref part="C12" gate="G$1" pin="2"/>
@@ -6884,13 +6886,14 @@ Source: OP1177_2177_4177.pdf</description>
 <wire x1="43.18" y1="101.6" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="106.68" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="104.14" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<junction x="53.34" y="101.6"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="86.36" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="P-4" gate="1" pin="V-"/>
-<pinref part="U$1" gate="G$1" pin="-V"/>
+<pinref part="IC8" gate="G$1" pin="-V"/>
 <wire x1="180.34" y1="93.98" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
 <junction x="180.34" y="86.36"/>
 </segment>
@@ -6976,7 +6979,6 @@ Source: OP1177_2177_4177.pdf</description>
 <wire x1="149.86" y1="86.36" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="99.06" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -7009,7 +7011,7 @@ Source: OP1177_2177_4177.pdf</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="96.52" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RG2"/>
+<pinref part="IC8" gate="G$1" pin="RG2"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -7017,7 +7019,7 @@ Source: OP1177_2177_4177.pdf</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="109.22" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RG1"/>
+<pinref part="IC8" gate="G$1" pin="RG1"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -7028,7 +7030,7 @@ Source: OP1177_2177_4177.pdf</description>
 <wire x1="213.36" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <junction x="213.36" y="104.14"/>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
+<pinref part="IC8" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -7085,7 +7087,7 @@ Source: OP1177_2177_4177.pdf</description>
 <wire x1="190.5" y1="86.36" x2="187.96" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="86.36" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="96.52" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="REF"/>
+<pinref part="IC8" gate="G$1" pin="REF"/>
 <wire x1="193.04" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="101.6" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="101.6" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
@@ -7128,39 +7130,28 @@ Source: OP1177_2177_4177.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="-IN"/>
-<pinref part="U$1" gate="G$1" pin="-IN"/>
+<pinref part="IC8" gate="G$1" pin="-IN"/>
+<pinref part="IC8" gate="G$1" pin="-IN"/>
 <pinref part="SJ2" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<junction x="170.18" y="116.84"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="+IN"/>
-<pinref part="U$1" gate="G$1" pin="+IN"/>
+<pinref part="IC8" gate="G$1" pin="+IN"/>
+<pinref part="IC8" gate="G$1" pin="+IN"/>
 <pinref part="SJ3" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<junction x="170.18" y="91.44"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,180.34,114.3,U$1,+V,V+,,,"/>
-<approved hash="104,1,180.34,93.98,U$1,-V,V-,,,"/>
-<approved hash="108,1,53.34,106.68,GND,,,,,"/>
-<approved hash="108,1,53.34,109.22,V+,,,,,"/>
-<approved hash="108,1,53.34,101.6,V-,,,,,"/>
-<approved hash="108,1,142.24,99.06,N$17,,,,,"/>
-<approved hash="108,1,170.18,116.84,N$14,,,,,"/>
-<approved hash="108,1,170.18,91.44,N$15,,,,,"/>
-<approved hash="113,1,53.5771,106.811,JP1,,,,,"/>
-<approved hash="113,1,43.4171,61.0912,JP3,,,,,"/>
-<approved hash="113,1,78.9771,118.241,JP2,,,,,"/>
-<approved hash="113,1,39.9631,93.98,SJ1,,,,,"/>
-<approved hash="113,1,158.157,116.84,SJ2,,,,,"/>
-<approved hash="113,1,158.157,91.44,SJ3,,,,,"/>
-<approved hash="113,1,35.7971,116.971,JP4,,,,,"/>
+<approved hash="104,1,180.34,114.3,IC8,+V,V+,,,"/>
+<approved hash="104,1,180.34,93.98,IC8,-V,V-,,,"/>
 </errors>
 </schematic>
 </drawing>
